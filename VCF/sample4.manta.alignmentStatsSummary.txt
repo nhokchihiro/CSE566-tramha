@@ -1,0 +1,18 @@
+group:	/scratch/tmh6573/CSE556-2/parliament2-3/input.bam
+fragment length observations:	799676
+fragment length quantiles:
+0.01	157
+0.05	168
+0.1	175
+0.25	187
+0.5	200
+0.75	213
+0.9	225
+0.95	232
+0.99	246
+Total sampled reads:	2175809
+Total sampled paired reads:	2175809
+Total sampled unpaired reads:	0
+Total sampled paired reads with low MAPQ:	492385
+Total sampled high-confidence read pairs passing all filters:	800000
+
