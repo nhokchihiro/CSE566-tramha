@@ -1,0 +1,35 @@
+#Software: 1.4.5-unstable-66-4e44b43 (commit 4e44b43)
+#Command: /scratch/tmh6573/breakdancer/build/bin/breakdancer-max /scratch/tmh6573/CSE556-2/sample2_sorted_breakdancer.txt 
+#Library Statistics:
+#/scratch/tmh6573/CSE556-2/sample2_sorted.bam	mean:199.62	std:19.56	uppercutoff:279.35	lowercutoff:122.88	readlen:149.99	library:NA	reflen:41689799	seqcov:26.2681	phycov:17.4799	1:1	2:383	3:361	4:3667
+#Chr1	Pos1	Orientation1	Chr2	Pos2	Orientation2	Type	Size	Score	num_Reads	num_Reads_lib	sample2_sorted.bam
+chr21	9176108	3+3-	chr21	9176171	3+3-	INS	-88	99	3	/scratch/tmh6573/CSE556-2/sample2_sorted.bam|3	NA
+chr21	9840461	2+2-	chr21	9840526	2+2-	INS	-89	99	2	/scratch/tmh6573/CSE556-2/sample2_sorted.bam|2	NA
+chr21	11067336	2+2-	chr21	11067417	2+2-	INS	-84	99	2	/scratch/tmh6573/CSE556-2/sample2_sorted.bam|2	NA
+chr21	15742294	5+2-	chr21	15742334	5+2-	INS	-83	99	2	/scratch/tmh6573/CSE556-2/sample2_sorted.bam|2	NA
+chr21	18792026	4+4-	chr21	18792086	4+4-	INS	-98	99	4	/scratch/tmh6573/CSE556-2/sample2_sorted.bam|4	NA
+chr21	19714691	7+2-	chr21	19714745	7+2-	INS	-80	99	2	/scratch/tmh6573/CSE556-2/sample2_sorted.bam|2	NA
+chr21	21606172	17+15-	chr21	21606286	17+15-	INS	-102	99	14	/scratch/tmh6573/CSE556-2/sample2_sorted.bam|14	NA
+chr21	22587596	12+9-	chr21	22587723	12+9-	INS	-99	99	9	/scratch/tmh6573/CSE556-2/sample2_sorted.bam|9	NA
+chr21	23489751	3+3-	chr21	23489811	3+3-	INS	-90	99	3	/scratch/tmh6573/CSE556-2/sample2_sorted.bam|3	NA
+chr21	23885617	19+16-	chr21	23885744	19+16-	INS	-104	99	15	/scratch/tmh6573/CSE556-2/sample2_sorted.bam|15	NA
+chr21	24247386	2+2-	chr21	24247443	2+2-	INS	-85	99	2	/scratch/tmh6573/CSE556-2/sample2_sorted.bam|2	NA
+chr21	24552377	2+2-	chr21	24552414	2+2-	INS	-108	99	2	/scratch/tmh6573/CSE556-2/sample2_sorted.bam|2	NA
+chr21	25813377	4+2-	chr21	25813424	4+2-	INS	-85	99	2	/scratch/tmh6573/CSE556-2/sample2_sorted.bam|2	NA
+chr21	26713804	12+8-	chr21	26713905	12+8-	INS	-97	99	7	/scratch/tmh6573/CSE556-2/sample2_sorted.bam|7	NA
+chr21	28112700	15+13-	chr21	28112820	15+13-	INS	-101	99	13	/scratch/tmh6573/CSE556-2/sample2_sorted.bam|13	NA
+chr21	28719555	3+3-	chr21	28719615	3+3-	INS	-89	99	3	/scratch/tmh6573/CSE556-2/sample2_sorted.bam|3	NA
+chr21	32185094	21+14-	chr21	32185219	21+14-	INS	-96	99	14	/scratch/tmh6573/CSE556-2/sample2_sorted.bam|14	NA
+chr21	34751239	2+2-	chr21	34751273	2+2-	INS	-86	99	2	/scratch/tmh6573/CSE556-2/sample2_sorted.bam|2	NA
+chr21	35306741	13+11-	chr21	35306834	13+11-	INS	-98	99	10	/scratch/tmh6573/CSE556-2/sample2_sorted.bam|10	NA
+chr21	35400682	2+1-	chr21	35400787	1+2-	DEL	80	99	2	/scratch/tmh6573/CSE556-2/sample2_sorted.bam|2	0.23
+chr21	37426557	7+5-	chr21	37426670	7+5-	INS	-98	99	5	/scratch/tmh6573/CSE556-2/sample2_sorted.bam|5	NA
+chr21	39982515	2+2-	chr21	39982584	2+2-	INS	-89	99	2	/scratch/tmh6573/CSE556-2/sample2_sorted.bam|2	NA
+chr21	41939764	10+9-	chr21	41939844	10+9-	INS	-102	99	9	/scratch/tmh6573/CSE556-2/sample2_sorted.bam|9	NA
+chr21	42280146	6+5-	chr21	42280216	6+5-	INS	-97	99	5	/scratch/tmh6573/CSE556-2/sample2_sorted.bam|5	NA
+chr21	42314622	10+7-	chr21	42314747	10+7-	INS	-90	99	7	/scratch/tmh6573/CSE556-2/sample2_sorted.bam|7	NA
+chr21	44516502	3+2-	chr21	44516539	3+2-	INS	-87	99	2	/scratch/tmh6573/CSE556-2/sample2_sorted.bam|2	NA
+chr21	44800128	9+7-	chr21	44800245	9+7-	INS	-93	99	6	/scratch/tmh6573/CSE556-2/sample2_sorted.bam|6	NA
+chr21	44811295	2+2-	chr21	44811321	2+2-	INS	-82	99	2	/scratch/tmh6573/CSE556-2/sample2_sorted.bam|2	NA
+chr21	44899883	17+12-	chr21	44899995	17+12-	INS	-101	99	12	/scratch/tmh6573/CSE556-2/sample2_sorted.bam|12	NA
+chr21	45735967	14+12-	chr21	45736091	14+12-	INS	-90	99	12	/scratch/tmh6573/CSE556-2/sample2_sorted.bam|12	NA
