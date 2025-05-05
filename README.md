@@ -14,6 +14,7 @@ To understand how different SV calling algorithms influence accuracy, efficiency
 
 ## 📁 Structure
 
-├── VCF/ # Result vcf files
-├── scripts/ # SV calling and evaluation scripts
-├── fig/ # Plots and summaries
+├── VCF/         # Result vcf files  
+├── scripts/     # SV calling and evaluation scripts  
+├── fig/         # Plots and summaries  
+
