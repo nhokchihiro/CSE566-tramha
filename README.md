@@ -1,4 +1,4 @@
-# SV Caller Benchmark: Deletions & Insertions
+# SV Caller Performance Evaluation in Deletions & Insertions
 
 This project benchmarks four structural variant (SV) callers—**Manta**, **DELLY**, **LUMPY**, and **Breakdancer**—on synthetic human genome data simulated with **SURVIVOR**. We evaluate how their algorithmic approaches affect performance and usability in detecting **deletions** and **insertions**.
 
