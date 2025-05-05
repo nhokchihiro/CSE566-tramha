@@ -1,0 +1,17 @@
+#Software: 1.4.5-unstable-66-4e44b43 (commit 4e44b43)
+#Command: /scratch/tmh6573/breakdancer/build/bin/breakdancer-max /scratch/tmh6573/CSE556-2/sample6_sorted_breakdancer.txt 
+#Library Statistics:
+#/scratch/tmh6573/CSE556-2/sample6_sorted.bam	mean:199.81	std:19.63	uppercutoff:279.42	lowercutoff:122.41	readlen:150	library:NA	reflen:41689793	seqcov:26.2168	phycov:17.4613	2:350	3:175	4:3534	8:1
+#Chr1	Pos1	Orientation1	Chr2	Pos2	Orientation2	Type	Size	Score	num_Reads	num_Reads_lib	sample6_sorted.bam
+chr21	10579021	9+9-	chr21	10579147	9+9-	INS	-103	99	9	/scratch/tmh6573/CSE556-2/sample6_sorted.bam|9	NA
+chr21	14874313	10+6-	chr21	14874422	10+6-	INS	-109	99	6	/scratch/tmh6573/CSE556-2/sample6_sorted.bam|6	NA
+chr21	16094237	11+10-	chr21	16094362	11+10-	INS	-98	99	10	/scratch/tmh6573/CSE556-2/sample6_sorted.bam|10	NA
+chr21	16196029	15+12-	chr21	16196155	15+12-	INS	-101	99	12	/scratch/tmh6573/CSE556-2/sample6_sorted.bam|12	NA
+chr21	18982564	13+10-	chr21	18982691	13+10-	INS	-101	99	10	/scratch/tmh6573/CSE556-2/sample6_sorted.bam|10	NA
+chr21	21504332	12+8-	chr21	21504446	12+8-	INS	-103	99	8	/scratch/tmh6573/CSE556-2/sample6_sorted.bam|8	NA
+chr21	26714182	11+9-	chr21	26714293	11+9-	INS	-106	99	9	/scratch/tmh6573/CSE556-2/sample6_sorted.bam|9	NA
+chr21	29364186	2+2-	chr21	29364247	2+2-	INS	-84	99	2	/scratch/tmh6573/CSE556-2/sample6_sorted.bam|2	NA
+chr21	29507985	13+10-	chr21	29508111	13+10-	INS	-91	99	10	/scratch/tmh6573/CSE556-2/sample6_sorted.bam|10	NA
+chr21	32378797	15+10-	chr21	32378914	15+10-	INS	-95	99	10	/scratch/tmh6573/CSE556-2/sample6_sorted.bam|10	NA
+chr21	39537095	8+7-	chr21	39537221	8+7-	INS	-94	99	7	/scratch/tmh6573/CSE556-2/sample6_sorted.bam|7	NA
+chr21	43902319	4+1-	chr21	43906477	2+3-	DEL	4094	99	3	/scratch/tmh6573/CSE556-2/sample6_sorted.bam|3	0.02
