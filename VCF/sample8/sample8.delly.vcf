@@ -1,0 +1,39 @@
+##fileformat=VCFv4.1
+##fileDate=20250503
+##ALT=<ID=DEL,Description="Deletion">
+##ALT=<ID=DUP,Description="Duplication">
+##ALT=<ID=INV,Description="Inversion">
+##ALT=<ID=TRA,Description="Translocation">
+##ALT=<ID=INS,Description="Insertion">
+##FILTER=<ID=LowQual,Description="PE/SR support below 3 or mapping quality below 20.">
+##INFO=<ID=CIEND,Number=2,Type=Integer,Description="PE confidence interval around END">
+##INFO=<ID=CIPOS,Number=2,Type=Integer,Description="PE confidence interval around POS">
+##INFO=<ID=CHR2,Number=1,Type=String,Description="Chromosome for END coordinate in case of a translocation">
+##INFO=<ID=END,Number=1,Type=Integer,Description="End position of the structural variant">
+##INFO=<ID=PE,Number=1,Type=Integer,Description="Paired-end support of the structural variant">
+##INFO=<ID=MAPQ,Number=1,Type=Integer,Description="Median mapping quality of paired-ends">
+##INFO=<ID=SR,Number=1,Type=Integer,Description="Split-read support">
+##INFO=<ID=SRQ,Number=1,Type=Float,Description="Split-read consensus alignment quality">
+##INFO=<ID=CONSENSUS,Number=1,Type=String,Description="Split-read consensus sequence">
+##INFO=<ID=CT,Number=1,Type=String,Description="Paired-end signature induced connection type">
+##INFO=<ID=IMPRECISE,Number=0,Type=Flag,Description="Imprecise structural variation">
+##INFO=<ID=PRECISE,Number=0,Type=Flag,Description="Precise structural variation">
+##INFO=<ID=SVTYPE,Number=1,Type=String,Description="Type of structural variant">
+##INFO=<ID=SVMETHOD,Number=1,Type=String,Description="Type of approach used to detect SV">
+##INFO=<ID=INSLEN,Number=1,Type=Integer,Description="Predicted length of the insertion">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=GL,Number=G,Type=Float,Description="Log10-scaled genotype likelihoods for RR,RA,AA genotypes">
+##FORMAT=<ID=GQ,Number=1,Type=Integer,Description="Genotype Quality">
+##FORMAT=<ID=FT,Number=1,Type=String,Description="Per-sample genotype filter">
+##FORMAT=<ID=RC,Number=1,Type=Integer,Description="Raw high-quality read counts for the SV">
+##FORMAT=<ID=RCL,Number=1,Type=Integer,Description="Raw high-quality read counts for the left control region">
+##FORMAT=<ID=RCR,Number=1,Type=Integer,Description="Raw high-quality read counts for the right control region">
+##FORMAT=<ID=CN,Number=1,Type=Integer,Description="Read-depth based copy-number estimate for autosomal sites">
+##FORMAT=<ID=DR,Number=1,Type=Integer,Description="# high-quality reference pairs">
+##FORMAT=<ID=DV,Number=1,Type=Integer,Description="# high-quality variant pairs">
+##FORMAT=<ID=RR,Number=1,Type=Integer,Description="# high-quality reference junction reads">
+##FORMAT=<ID=RV,Number=1,Type=Integer,Description="# high-quality variant junction reads">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	sample8
+chr21	21498751	DEL00000001	N	<DEL>	.	PASS	PRECISE;CIEND=-52,52;CIPOS=-52,52;SVTYPE=DEL;SVMETHOD=EMBL.DELLYv0.7.2;CHR2=chr21;END=21528065;CT=3to5;INSLEN=0;PE=5;MAPQ=60;SR=17;SRQ=1;CONSENSUS=TATAATCTCATAAATACTCTGAGCTGTCCAGAGGGAGCCGAGACATACCAGAGTAAAAGATTAGAACACAAAAGAAGTACAGTATTTATTTTGGGGAGGTGATTTTGATTCACTTTGTAATTATTACTAAGTGAAATAAGCCAATTTTAAAAGACTACCTACTTTATAATTCCAACTATATGACAAATATAGTTTTGCTTTGAGAAAAGCAAAAGACACTAAAAAG	GT:GL:GQ:FT:RCL:RC:RCR:CN:DR:DV:RR:RV	1/1:-79.0974,-6.62003,0:66:PASS:2827:0:2926:0:7:4:0:22
+chr21	35201638	DEL00000002	N	<DEL>	.	PASS	PRECISE;CIEND=-35,35;CIPOS=-35,35;SVTYPE=DEL;SVMETHOD=EMBL.DELLYv0.7.2;CHR2=chr21;END=35286504;CT=3to5;INSLEN=0;PE=5;MAPQ=60;SR=15;SRQ=0.991589;CONSENSUS=CTGCACGCATGGTTGATTGGCCCCAGGTTGCCTGCTCTCTGCAAAGGTGGACTCTTAGTTGTCTTTTTTGTCTCTGCCCCTCTTCTCTTCCTGGGATTCTCTAGGCAGTATCATAGTCCATAATTGGCCTTCACCAGGTTAGACAATCAGATATTCCTTAAAAAGCCAACCGCAGTTCGGGAACATCAGTCTCTAATTTCTACATGTCCAATGT	GT:GL:GQ:FT:RCL:RC:RCR:CN:DR:DV:RR:RV	1/1:-71.7977,-6.01827,0:60:PASS:8462:0:8464:0:4:1:0:20
+chr21	35935541	DEL00000003	N	<DEL>	.	PASS	PRECISE;CIEND=-57,57;CIPOS=-57,57;SVTYPE=DEL;SVMETHOD=EMBL.DELLYv0.7.2;CHR2=chr21;END=36000959;CT=3to5;INSLEN=0;PE=2;MAPQ=60;SR=10;SRQ=1;CONSENSUS=AGAATTTTTCTCAGTATTCCTCCAATTCTCCCTCCACCTCCTCTGCATTCCTACCATGACTACATGAGGTTCCACAATACTTGGCATTTCATCCATTATCCAGGAAGCACGCTTGTCTCCAACTGTGTCTTGACCACTCCTATCACAACGGATGTGCTCACTGAGAGTAGCAGTATAGACTAAAGAAGACCCTTTATGGATTTT	GT:GL:GQ:FT:RCL:RC:RCR:CN:DR:DV:RR:RV	1/1:-46.6984,-3.91178,0:39:PASS:6558:0:6387:0:3:2:0:13

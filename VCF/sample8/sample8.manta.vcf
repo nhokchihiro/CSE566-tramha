@@ -1,0 +1,49 @@
+##fileformat=VCFv4.1
+##fileDate=20250503
+##source=GenerateSVCandidates 1.5.0
+##reference=file:///scratch/tmh6573/CSE556-2/parliament2-3/ref.fa
+##contig=<ID=chr21,length=46709983>
+##INFO=<ID=IMPRECISE,Number=0,Type=Flag,Description="Imprecise structural variation">
+##INFO=<ID=SVTYPE,Number=1,Type=String,Description="Type of structural variant">
+##INFO=<ID=SVLEN,Number=.,Type=Integer,Description="Difference in length between REF and ALT alleles">
+##INFO=<ID=END,Number=1,Type=Integer,Description="End position of the variant described in this record">
+##INFO=<ID=CIPOS,Number=2,Type=Integer,Description="Confidence interval around POS">
+##INFO=<ID=CIEND,Number=2,Type=Integer,Description="Confidence interval around END">
+##INFO=<ID=CIGAR,Number=A,Type=String,Description="CIGAR alignment for each alternate indel allele">
+##INFO=<ID=MATEID,Number=.,Type=String,Description="ID of mate breakend">
+##INFO=<ID=EVENT,Number=1,Type=String,Description="ID of event associated to breakend">
+##INFO=<ID=HOMLEN,Number=.,Type=Integer,Description="Length of base pair identical homology at event breakpoints">
+##INFO=<ID=HOMSEQ,Number=.,Type=String,Description="Sequence of base pair identical homology at event breakpoints">
+##INFO=<ID=SVINSLEN,Number=.,Type=Integer,Description="Length of insertion">
+##INFO=<ID=SVINSSEQ,Number=.,Type=String,Description="Sequence of insertion">
+##INFO=<ID=LEFT_SVINSSEQ,Number=.,Type=String,Description="Known left side of insertion for an insertion of unknown length">
+##INFO=<ID=RIGHT_SVINSSEQ,Number=.,Type=String,Description="Known right side of insertion for an insertion of unknown length">
+##INFO=<ID=BND_DEPTH,Number=1,Type=Integer,Description="Read depth at local translocation breakend">
+##INFO=<ID=MATE_BND_DEPTH,Number=1,Type=Integer,Description="Read depth at remote translocation mate breakend">
+##INFO=<ID=JUNCTION_QUAL,Number=1,Type=Integer,Description="If the SV junction is part of an EVENT (ie. a multi-adjacency variant), this field provides the QUAL value for the adjacency in question only">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=FT,Number=1,Type=String,Description="Sample filter, 'PASS' indicates that all filters have passed for this sample">
+##FORMAT=<ID=GQ,Number=1,Type=Integer,Description="Genotype Quality">
+##FORMAT=<ID=PL,Number=G,Type=Integer,Description="Normalized, Phred-scaled likelihoods for genotypes as defined in the VCF specification">
+##FORMAT=<ID=PR,Number=.,Type=Integer,Description="Spanning paired-read support for the ref and alt alleles in the order listed">
+##FORMAT=<ID=SR,Number=.,Type=Integer,Description="Split reads for the ref and alt alleles in the order listed, for reads where P(allele|read)>0.999">
+##FILTER=<ID=Ploidy,Description="For DEL & DUP variants, the genotypes of overlapping variants (with similar size) are inconsistent with diploid expectation">
+##FILTER=<ID=MaxDepth,Description="Depth is greater than 3x the median chromosome depth near one or both variant breakends">
+##FILTER=<ID=MaxMQ0Frac,Description="For a small variant (<1000 bases), the fraction of reads in all samples with MAPQ0 around either breakend exceeds 0.4">
+##FILTER=<ID=NoPairSupport,Description="For variants significantly larger than the paired read fragment size, no paired reads support the alternate allele in any sample.">
+##FILTER=<ID=MinQUAL,Description="QUAL score is less than 20">
+##FILTER=<ID=SampleFT,Description="No sample passes all the sample-level filters (at the field FORMAT/FT)">
+##FILTER=<ID=MinGQ,Description="GQ score is less than 15 (filter applied at sample level)">
+##FILTER=<ID=HomRef,Description="homozygous reference call (filter applied at sample level)">
+##ALT=<ID=DEL,Description="Deletion">
+##ALT=<ID=INS,Description="Insertion">
+##ALT=<ID=DUP:TANDEM,Description="Tandem Duplication">
+##cmdline=/miniconda/bin/configManta.py --referenceFasta ref.fa --normalBam input.bam --runDir manta --region=chr21
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	SAMPLE1
+chr21	16098965	MantaINS:0:0:0:0:3:0	G	<INS>	999	PASS	END=16098965;SVTYPE=INS;LEFT_SVINSSEQ=GTAACAACAGGTACCTTATGCCTTCGCTCTTAGTATAAAATGTTAATTAGGCTCAATGACCTCTTCGTGTTCCTACTTCACTCAAGCTACACACATTGGCCGGTCGAAGCATAGAAACAAGACGGCGCTAGCGAATGAAAGAAGGATGCTGTTTCCATGAAACGACGTCGTTGTGCTCTAAGTTCCCGAT;RIGHT_SVINSSEQ=AATTGCACGCAACAATGTATAGAACGTGACAACAAACACTCCTGCTCTTCGTAGTCAGTCTTCCTCCAGGATTTGATTTGCCCCAAGAGCCCATGAATAGCAGAAAATT	GT:FT:GQ:PL:PR:SR	1/1:PASS:107:999,110,0:0,0:0,54
+chr21	17020390	MantaINS:1:0:0:0:3:0	G	<INS>	999	PASS	END=17020390;SVTYPE=INS;LEFT_SVINSSEQ=GTCGTCGACCATCACTCTAGAAGGCCAACTCTGGGGTAGCCGATGGGTCGCCGTAACAAGTCCGATATAGACACAGTGGAATGTTGTAGTGGCTACTAATGCAGGCACTGCAGTTCCGCACTGGGGTCGAAACCGTGGACCCC;RIGHT_SVINSSEQ=CAACAATAGCAACCAAATAAATCCGAATAGTGGATCAGGTAGTCATCAGGCGCGATGATTGGCAGATTTCGTACAACGATACGCTGCGGACCGGCCGAACGGAGTCGATGA	GT:FT:GQ:PL:PR:SR	1/1:PASS:74:999,77,0:0,2:0,37
+chr21	18844940	MantaINS:2:0:0:0:2:0	A	<INS>	999	PASS	END=18844940;SVTYPE=INS;CIPOS=0,1;CIEND=0,1;HOMLEN=1;HOMSEQ=A;LEFT_SVINSSEQ=ACAAGTCATATTGAGAAGCGGCACGGGCGGACTAGCATGTACGGCAGCGTTCATGGGAAAGAGCAATATCATGGCTTAACTTGATCGCCGCAGTCTTATTCTGTGAGCAGGTGCTCGGGTATTCTCGGCCCTCAGTACAATG;RIGHT_SVINSSEQ=GCGGTGCTCGCGCCGGAATGGTAGGTTCGGTATCGTTAGAGAGTCACCACTTATCTGAACGTCGAACAATAGTTGATTGAACTCCAATAAAGAGAAGCAGCCAAAGCTGTTG	GT:FT:GQ:PL:PR:SR	1/1:PASS:107:999,110,0:0,2:0,52
+chr21	21498750	MantaDEL:3:0:1:0:0:0	A	<DEL>	737	PASS	END=21528063;SVTYPE=DEL;SVLEN=-29313;CIPOS=0,1;CIEND=0,1;HOMLEN=1;HOMSEQ=A	GT:FT:GQ:PL:PR:SR	1/1:PASS:39:790,42,0:0,5:0,20
+chr21	35201638	MantaDEL:6:0:1:0:0:0	G	<DEL>	604	PASS	END=35286503;SVTYPE=DEL;SVLEN=-84865	GT:FT:GQ:PL:PR:SR	1/1:PASS:33:657,36,0:0,4:0,17
+chr21	35935541	MantaDEL:7:0:1:0:0:0	A	<DEL>	480	PASS	END=36000958;SVTYPE=DEL;SVLEN=-65417	GT:FT:GQ:PL:PR:SR	1/1:PASS:27:533,30,0:0,2:0,12
+chr21	43764282	MantaINS:9:0:0:0:2:0	T	<INS>	999	PASS	END=43764282;SVTYPE=INS;CIPOS=0,3;CIEND=0,3;HOMLEN=3;HOMSEQ=CCG;LEFT_SVINSSEQ=CCGGGCGAGCCCAAGGTCAATACACTGTCAGGAACGGTTACACCATTAATATACTCACACCGTGTAACATCCTGGACCACAAAACTCCACGCACTTGAAGTCTTTCTAGTCGTCTAAACAGTCGACCGCCAAGTTCAGCGCGCATAATACTGAAACCCTG;RIGHT_SVINSSEQ=TATAATCATTATCGCCGGGTAGCCAAGTCCCACAACTCCTACGGATTGGGCGAGAAGGTTTATCATGAAATCCCTCCGTTAACAGCACTAATAAACTGCAGACACACGG	GT:FT:GQ:PL:PR:SR	1/1:PASS:80:999,83,0:0,0:0,42
