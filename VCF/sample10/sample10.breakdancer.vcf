@@ -1,0 +1,7 @@
+#Software: 1.4.5-unstable-66-4e44b43 (commit 4e44b43)
+#Command: /scratch/tmh6573/breakdancer/build/bin/breakdancer-max /scratch/tmh6573/CSE556-2/sample10_sorted_breakdancer.txt 
+#Library Statistics:
+#/scratch/tmh6573/CSE556-2/sample10_sorted.bam	mean:199.49	std:19.69	uppercutoff:279.16	lowercutoff:121.67	readlen:150	library:NA	reflen:41689815	seqcov:26.071	phycov:17.3363	2:296	3:17	4:3459
+#Chr1	Pos1	Orientation1	Chr2	Pos2	Orientation2	Type	Size	Score	num_Reads	num_Reads_lib	sample10_sorted.bam
+chr21	10392368	9+4-	chr21	10392454	9+4-	INS	-100	99	4	/scratch/tmh6573/CSE556-2/sample10_sorted.bam|4	NA
+chr21	28172898	6+2-	chr21	28172937	6+2-	INS	-88	99	2	/scratch/tmh6573/CSE556-2/sample10_sorted.bam|2	NA
