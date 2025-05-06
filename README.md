@@ -16,8 +16,9 @@ This project evaluates four structural variant (SV) callers —**Manta**, **DELL
 
 ## Structure
 
-├── Images/art-simulated         # ART read simulation  
-├── VCF/                         # Result vcf files
-├── analysis/                    # SV analysis results  
-├── scripts/                     # SV extraction and evaluation scripts
-└── README.md                    # Project overview 
+├── Images/art-simulated/        # Simulated reads generated using ART
+├── VCF/                         # VCF output files from SV callers
+├── analysis/                    # Structural variant analysis results and figures
+├── scripts/                     # Scripts for SV extraction, comparison, and evaluation
+└── README.md                    # Overview and instructions for the project
+
